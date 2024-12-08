@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://hiteshkhatri74.github.io/youtube-clone/",
+  "homepage": "https://hiteshkhatri74.github.io/Youtube-Clone/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
