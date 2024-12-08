@@ -18,4 +18,4 @@ const [sidebar,setSidebar] = useState(true);
   )
 }
 
-export default App
+export default App;

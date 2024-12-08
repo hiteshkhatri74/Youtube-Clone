@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-// import React from 'react';
 import './Sidebar.css';
 import home from '../../assets/home.png';
 import game_icon from '../../assets/game_icon.png';
@@ -79,4 +78,4 @@ const Sidebar = ({sidebar,category,setCategory}) => {
   )
 }
 
-export default Sidebar
+export default Sidebar;

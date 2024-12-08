@@ -1,9 +1,7 @@
 /* eslint-disable react/prop-types */
-// import React from 'react';
 import './Navbar.css';
 import menu_icon from '../../assets/menu.png';
 import youtube_main_logo from '../../assets/youtube_main_logo.png'
-// import logo from '../../assets/logo.png'
 import search_icon from '../../assets/search.png';
 import upload_icon from '../../assets/upload.png';
 import more_icon from '../../assets/more.png';
@@ -36,4 +34,4 @@ const Navbar = ({setSidebar}) => {
   );
 }
 
-export default Navbar
+export default Navbar;

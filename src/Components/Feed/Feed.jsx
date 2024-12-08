@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 import moment from 'moment';
@@ -23,7 +24,7 @@ const Feed = ({category}) => {
     <div className="feed">
       {data.map((item,index)=>{
         return(
-          <Link to={`video/${item.snippet.categoryId}/${item.id}`} className='card'>
+          <Link to={`video/${item.snippet.categoryId}/${item.id}`} key={index} className='card'>
 
              <img src={item.snippet.thumbnails.medium.url} alt="" />
              <h2>{item.snippet.title}</h2>
@@ -37,4 +38,4 @@ const Feed = ({category}) => {
   );
 };
 
-export default Feed
+export default Feed;

@@ -1,13 +1,10 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
-// import React from 'react';
 import './PlayVideo.css';
-// import video1 from '../../assets/video.mp4';
 import like from '../../assets/like.png';
 import dislike from '../../assets/dislike.png';
 import share from '../../assets/share.png';
 import save from '../../assets/save.png';
-// import jack from '../../assets/jack.png';
-// import user_profile from '../../assets/user_profile.jpg';
 import { useEffect, useState } from 'react';
 import { API_KEY } from '../../data';
 import { value_converter } from '../../data';
@@ -49,7 +46,7 @@ const PlayVideo = () => {
   return (
     <div className='play-video'>
       {/* <video src={video1} controls autoPlay muted></video> */}
-      <iframe src={`https://www.youtube.com/embed/${videoId}?autoplay=1`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe src={`https://www.youtube.com/embed/${videoId}?autoplay=1`} frameBorder='0' allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <h3>{apiData?apiData.snippet.title:"Title Here"}</h3>
 
       <div className="play-video-info">
@@ -104,4 +101,4 @@ const PlayVideo = () => {
   );
 }
 
-export default PlayVideo
+export default PlayVideo;
